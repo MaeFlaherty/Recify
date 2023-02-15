@@ -6,20 +6,32 @@
 		<title> Recify </title>
 		<meta charset = "utf-8">
 		<script type = "text/javascript" src = "validation.js"></script>
+		<link rel="stylesheet" href="main.css">
 
-	<head>
+	</head>
 			
 	<body>
+
 		<h1>Welcome to Recify!</h1>	
 		<p>See Your Fridge through a new lens!</p>
 
 		<form name = "ingredients" action = save.php method = "post">
-			Enter Ingredients in your Fridge:<br> <input id = "list" name = "list" ><br>
+			Enter Ingredients in your Fridge:<br> <input id = "list" name = "list" ></br>
 		
 			<button type ="button" onclick = "valid();">Submit</button>	
 		</form>
-	
 
+	<div id = "bake-box">
+		Baking:<br> </br> 
+		<button type ="button" onclick = "valid();">flour</button>
+		<button type ="button" onclick = "valid();">Baking powder</button>
+		<button type ="button" onclick = "valid();">Baking soda</button>
+		<button type ="button" onclick = "valid();">yeast</button>
+	</div>
+		
+		<section class="header">
+			
+		</section>
 
 
 
