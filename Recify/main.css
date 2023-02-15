@@ -5,21 +5,11 @@
 h1{
      text-align: center;
 }
-p{
-    border-style: outset;
-    border-width: 5px;
-    border-color: cadetblue;
-    padding: 7px;
-    text-align: center;
-}
-p{
-    border-style: outset;
-    border-width: 5px;
-    border-color: cadetblue;
-    padding: 7px;
-    text-align: center;
 
+p{
+    text-align: center;
 }
+
 form{
     text-align: center;
 }
@@ -37,13 +27,46 @@ form{
 #body{ 
     background-image: url("image/bread 1.jpeg");
  }
-#bake-box{
-    border-style: outset;
-    border-width: 3px;
-    border-color: cadetblue;
-    padding: 7px;
-    text-align: left;
-    width: 50%;
-    justify-content: center;
-
+#boxes{
+    display: flex;
+    flex-grow: 3;
+    display: flex;
+    flex-direction: row;
 }
+    #bake-box {
+                border-style: outset;
+                border-width: 5px;
+                border-color: ghostwhite;
+                padding: 7px;
+                width: 40%;
+                text-align: center;
+                
+        }
+    #vegan-box {
+                border-style: outset;
+                border-width: 5px;
+                border-color: ghostwhite;
+                padding: 7px;
+                width: 40%;
+                text-align: center;
+
+
+                
+        }
+    #vegetables-box {
+                border-style: outset;
+                border-width: 5px;
+                border-color: ghostwhite;
+                padding: 7px;
+                text-align: center;
+                width: 40%;
+
+                
+        }   
+
+
+b{
+    text-align: center;
+}
+
+ 
