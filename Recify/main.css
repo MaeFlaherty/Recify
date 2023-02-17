@@ -1,7 +1,59 @@
-*{
-    margin: 10;
-    padding: 10;
+logo 
+html, body {
+    height: 100%;
+    margin: 0;
+    
 }
+header{
+    overflow: hidden;
+}
+
+#menu{
+    float: right;
+    width: 68%;
+    height: 100%;
+    margin: none;
+    position: fixed;
+    transform: translate(85%, 0%);
+
+}
+     
+#menu ul{
+    text-align: center;
+    float: right;
+    margin: none;
+    background: #121a2b;
+    width: 200%;
+}
+     
+#menu li{
+    display: inline-block;
+    padding: none;
+    margin: none;
+    font-size: medium;
+}
+     
+#menu li a, #menu li span{
+    display: inline-block;
+    padding: 0em 1.5em;
+    text-decoration: none;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 70px;
+}
+     
+#menu li a{
+         
+    color: #FFF;
+}
+     
+#menu li:hover a, #menu li span{
+    background: #FFF;
+    color: #58432a;
+    border-left: 1px solid #0074D9;
+    text-decoration: none;
+}
+
 h1{
      text-align: center;
 }
@@ -13,40 +65,34 @@ p{
 form{
     text-align: center;
 }
-.header{
-    min-height: 100vh;
-    width: 100%;
-    background-image: linear-
-    gradient rgba(0,105,112,0.6),rgba(0,105,112,0.6),url(image/bread 1.jpeg)
-    ;
-    background-position: top;
-    background-size : contain;
-    position: relative;
-        
+body{ 
+    background: #f8f7f7;
+      
 }
-#body{ 
-    background-image: url("image/bread 1.jpeg");
- }
- #boxes > .vegetables-box {
-    width: 80vmin;
+
+#boxes > vegetables-box {
+    width: 40vmin;
     height: 56vmin;
-    object-position: center;
     object-fit: cover;
+    object-position: center;
+    
 
 }
 #boxes {
+
     display: flex;
-    gap: 4vmin;
-    position: absolute; top: 50%; transform: translate(0%, -50%);
-    
+    width: 800px;
+    height: 300px;
+    gap: 4vmin;   
 }
     #bake-box {
                 border-style: outset;
                 border-width: 5px;
-                border-color: ghostwhite;
+                border-color: rgb(169, 169, 171);
                 padding: 7px;
                 width: 40%;
                 text-align: center;
+
                 
         }
     #vegan-box {
@@ -60,26 +106,26 @@ form{
 
                 
         }
-    #vegetables-box {
-                border-style: outset;
-                border-width: 5px;
-                border-color: ghostwhite;
-                padding: 7px;
-                text-align: center;
-                width: 80%;
-
-                
-        }   
+#vegetables-box {
+    border-style: outset;
+    border-width: 7px;
+    border-color: rgb(169, 169, 171);
+    padding: 7px;
+    text-align: center;
+    width: 80%;
+                                
+}   
 
 
 b{
     text-align: center;
 }
-.search{
-    position: absolute;	text-align: center;
-	width: 100%;left: 50%;top: 50%;
-	transform: translate(-50%, -50%);
+#search{
+    position: absolute ;	
     text-align: center;
+	width: 100%;
+	transform: translate(0%, -50%);
+    
 }
 .softbox{
 	transition: border .2s linear;
@@ -91,11 +137,11 @@ b{
 }
 .softbox:focus{
 	transition: border .2s linear;
-	border: 2px solid rgb(0, 110, 255);
+	border: 2px solid rgb(68, 109, 165);
 }
 .softbtn{
     position: absolute;
-	font-size: 20px;color: #66757f;
+	font-size: 20px;color: #6b93ad;
 	background-color: transparent;
 	border:none;right: 24%;
 	top: 5px;outline: none;
@@ -103,4 +149,46 @@ b{
 }
 .placeholder{
     text-align: center;
+}
+
+#header_image{
+
+    float: left;
+    padding: none;
+    margin: none;
+    height: 10px;
+    width: 20%;
+     
+   
+       
+   
+
+}
+#header_image img{
+    width: 40%;
+    float: left;
+    padding: 0px;
+ 
+
+}
+
+#margin {
+    margin: 75% 0;
+}
+.parallax {
+    background-image: url(food2.jpg);
+    height: 900px; 
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;    
+}
+p{
+    color: white;
+
+
+}
+#gfg {
+   z-index: 9;
 }
