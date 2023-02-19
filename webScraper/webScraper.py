@@ -22,10 +22,15 @@ data = get_ld_json(url)
 
 ingredients = data["recipeIngredient"]
 
+instructions = data["recipeInstructions"]
+
+print ("<h2>INGREDIENTS<h2>")
 for count, ing in enumerate(ingredients):
 	print(ing + "\n")
 
-	
+print ("<h2>INSTRUCTIONS<h2>")
+for count, inst in enumerate(instructions):
+	print(instructions[count]["text"] + "/n")
 
 
 
