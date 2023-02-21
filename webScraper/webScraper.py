@@ -24,13 +24,15 @@ ingredients = data["recipeIngredient"]
 
 instructions = data["recipeInstructions"]
 
-print ("<h2>INGREDIENTS<h2>")
+print("\n" + data["name"] + "\n")
+
+print ("<h2>*****INGREDIENTS*****<h2>")
 for count, ing in enumerate(ingredients):
 	print(ing + "\n")
 
-print ("<h2>INSTRUCTIONS<h2>")
+print ("<h2>*****INSTRUCTIONS*****<h2>")
 for count, inst in enumerate(instructions):
-	print(instructions[count]["text"] + "/n")
+	print(f"{count}. \n" + instructions[count]["text"] + "\n")
 
 
 
