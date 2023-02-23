@@ -72,7 +72,7 @@ form{
     text-align: center;
 }
 body{ 
-    background: #f8f7f7;
+    background: #244151;
       
 }
 
@@ -193,7 +193,9 @@ p{
     margin-left: 60px;
     height: 10%;
     padding: 20px;
-    border: 30px solid #1e2d47;
+    border: 30px solid #244151;
+    border-style: outset;
+
     
 }
 
