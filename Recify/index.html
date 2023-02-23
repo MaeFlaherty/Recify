@@ -5,8 +5,14 @@
 		
 		<title> Recify </title>
 		<meta charset = "utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
 		<script type = "text/javascript" src = "validation.js"></script>
 		<link rel="stylesheet" href="main.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+		<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/gfg.js"></script>
+		
 		
 		
 	</head>
@@ -30,35 +36,139 @@
 			
 	    </div>
 		<div class = "parallax">
-			<p style = "font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; color:white;" >Welcome to Recify</p>
+			<p style = "font-family: sans-serif; color:white;" >Welcome to Recify</p>
 			
 		</div>
-		
-		
 
-		<h1>Welcome to Recify!</h1>	
-		<p>See Your Fridge through a new lens!</p>
+		<section class="section section-light">
 
-
-	
-
-	
-		
-	<div id="search">
-		
-		<center><input type="ingredients" action = save.php method = "post" name="q" class="softbox" placeholder="Enter Ingredients from your Fridge: "></center>
-		<center><button type ="button" onclick = "valid();">Submit</button></center>
-	</div>				
-
-	
-	
-	<div id="search">
-		
-		<center><input type="ingredients" action = save.php method = "post" name="q" class="softbox" placeholder="Enter Ingredients from your Fridge: "></center>
-		<center><button type ="button" onclick = "valid();">Submit</button></center>
-	</div>
-
+			<b><center>What's in your pantry?</center></b> <br></br>	
 			
+			<div id="search">
+		
+				<center><input type="ingredients" action = save.php method = "post" name="q" class="softbox" placeholder="Enter Ingredients from your Fridge: "></center>
+				<center><button type ="button" onclick = "valid();">Submit</button></center>
+			</div>
+			<br> </br>
+			<div class="box" data-mouse-down-at="0" data-prev-percentage="0">
+				<div class="edie ">
+					baking 
+					<button class="myButton" onclick="changeColor(this)">flour</button>
+					<button class="myButton" onclick="changeColor(this)">flour</button>
+					<button class="myButton" onclick="changeColor(this)">flour</button>
+					<button class="myButton" onclick="changeColor(this)">flour</button>
+					<button class="myButton" onclick="changeColor(this)">flour</button>
+					<button class="myButton" onclick="changeColor(this)">flour</button>
+					<button class="myButton" onclick="changeColor(this)">flour</button>
+					<button class="myButton" onclick="changeColor(this)">flour</button>
+				<button class="load-more">More</button>
+				<script>
+					$(document).ready(function(){
+						$(".edie").slice(0, 4).fadeIn();
+						$(".load-more").click(function(){
+							$(".edie").slice(0, 12).fadeIn();
+							$(this).fadeOut();
+						});
+					});
+				</script>
+					
+					
+				</div>
+				
+				<div class="edie">
+					baking 
+					<button class="myButton" onclick="changeColor(this)">flour</button>
+					<button class="myButton" onclick="changeColor(this)">flour</button>
+					<button class="myButton" onclick="changeColor(this)">flour</button>
+					<button class="myButton" onclick="changeColor(this)">flour</button>
+					<button class="myButton" onclick="changeColor(this)">flour</button>
+					<button class="myButton" onclick="changeColor(this)">flour</button>
+					<button class="myButton" onclick="changeColor(this)">flour</button>
+					<button class="myButton" onclick="changeColor(this)">flour</button>
+				<button class="load-more">More</button>
+					<script>
+						$(document).ready(function(){
+							$(".edie").slice(0, 4).fadeIn();
+							$(".load-more").click(function(){
+								$(".edie").slice(0, 12).fadeIn();
+								$(this).fadeOut();
+							});
+						});
+					</script>
+				</div>
+				<div class="edie">
+					baking 
+					<button class="myButton" onclick="changeColor(this)">flour</button>
+					<button class="myButton" onclick="changeColor(this)">flour</button>
+					<button class="myButton" onclick="changeColor(this)">flour</button>
+					<button class="myButton" onclick="changeColor(this)">flour</button>
+					<button class="myButton" onclick="changeColor(this)">flour</button>
+					<button class="myButton" onclick="changeColor(this)">flour</button>
+					<button class="myButton" onclick="changeColor(this)">flour</button>
+					<button class="myButton" onclick="changeColor(this)">flour</button>
+				<button class="load-more">More</button>
+					<script>
+						$(document).ready(function(){
+							$(".edie").slice(0, 4).fadeIn();
+							$(".load-more").click(function(){
+								$(".edie").slice(0, 12).fadeIn();
+								$(this).fadeOut();
+							});
+						});
+					</script>	
+				</div>
+				<div class="edie">
+					baking 
+					<button class="myButton" onclick="changeColor(this)">flour</button>
+					<button class="myButton" onclick="changeColor(this)">flour</button>
+					<button class="myButton" onclick="changeColor(this)">flour</button>
+					<button class="myButton" onclick="changeColor(this)">flour</button>
+					<button class="myButton" onclick="changeColor(this)">flour</button>
+					<button class="myButton" onclick="changeColor(this)">flour</button>
+					<button class="myButton" onclick="changeColor(this)">flour</button>
+					<button class="myButton" onclick="changeColor(this)">flour</button>
+				<button class="load-more">More</button>
+					<script>
+						$(document).ready(function(){
+							$(".edie").slice(0, 4).fadeIn();
+							$(".load-more").click(function(){
+								$(".edie").slice(0, 12).fadeIn();
+								$(this).fadeOut();
+							});
+						});
+					</script>
+				</div>
+
+				<div class="edie">
+					baking 
+					<button class="myButton" onclick="changeColor(this)">flour</button>
+					<button class="myButton" onclick="changeColor(this)">flour</button>
+					<button class="myButton" onclick="changeColor(this)">flour</button>
+					<button class="myButton" onclick="changeColor(this)">flour</button>
+					<button class="myButton" onclick="changeColor(this)">flour</button>
+					<button class="myButton" onclick="changeColor(this)">flour</button>
+					<button class="myButton" onclick="changeColor(this)">flour</button>
+					<button class="myButton" onclick="changeColor(this)">flour</button>
+				<button class="load-more">More</button>
+					<script>
+						$(document).ready(function(){
+							$(".edie").slice(0, 4).fadeIn();
+							$(".load-more").click(function(){
+								$(".edie").slice(0, 12).fadeIn();
+								$(this).fadeOut();
+							});
+						});
+					</script>
+				</div>
+			
+			</div>	
+					
+				<br></br>
+
+		</div>
+		</section>
+		<script src="gfg.js"></script>	
+		<script src="gfg.js"></script>
 	</body>
 </html>
 

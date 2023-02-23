@@ -2,8 +2,12 @@ logo
 html, body {
     height: 100%;
     margin: 0;
-    
+    font-size: 16px;
+    line-height: 1.8cm;
+    box-sizing: border-box;
+
 }
+
 header{
     overflow: hidden;
 }
@@ -81,42 +85,34 @@ body{
 #boxes {
 
     display: flex;
-    width: 800px;
+    width: 1500px;
     height: 300px;
     gap: 4vmin;   
 }
-    #bake-box {
-                border-style: outset;
-                border-width: 5px;
-                border-color: rgb(169, 169, 171);
-                padding: 7px;
-                width: 40%;
-                text-align: center;
 
-                
-        }
-    #vegan-box {
-                border-style: outset;
-                border-width: 5px;
-                border-color: ghostwhite;
-                padding: 7px;
-                width: 40%;
-                text-align: center;
-
-
-                
-        }
 #vegetables-box {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    justify-content: space-between;
     border-style: outset;
     border-width: 7px;
     border-color: rgb(169, 169, 171);
     padding: 7px;
     text-align: center;
-    width: 80%;
-                                
+    width: 30%;
+    background-color: white;                                
 }   
 
-
+.myButton{
+    display: table-row;
+    background-color: #f5f8fa;
+    width: 15%;
+    height: 15%;
+    flex-direction: column;
+    margin: 10px;
+    text-align: center;
+}
 b{
     text-align: center;
 }
@@ -158,18 +154,11 @@ b{
     margin: none;
     height: 10px;
     width: 20%;
-     
-   
-       
-   
-
 }
 #header_image img{
     width: 40%;
     float: left;
     padding: 0px;
- 
-
 }
 
 #margin {
@@ -182,13 +171,89 @@ b{
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;    
+    background-size: cover; 
+    text-align: center;   
 }
 p{
     color: white;
+}
 
 
+.edie {
+    background-color: white;
+    width: 20%;
+    margin-bottom: 20px;
+    margin-left: 60px;
+    height: 20%;
+    padding: 30px;
+    border: 50px solid #343b63;
+    
 }
-#gfg {
-   z-index: 9;
+
+.box {
+   
+    justify-content: space-between;
+    display: flex;
+   
+    position: absolute;
+    top: 200%;
+    transform: translate(0%, -50%); 
+    user-select: none; /* -- Prevent image highlighting -- */
 }
+.edie myButton{
+    width: 100%;
+
+}
+
+.load-more{
+    display: block;
+    margin: auto;
+    height: 50px;
+    padding: 0 50px;
+    border: 0;
+    border-radius: 6px;
+    background-color: #0074D9;
+    color: #f5f8fa;
+    font-size: 16px;
+    cursor: pointer;
+    transition: .3s linear;
+}
+.load-more:hover{
+    opacity: .8;
+
+}
+
+
+.box-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 50px;
+}
+
+.button {
+    background-color: blue;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.buttonss{
+    width: calc(50% - 5px);
+    margin-bottom: 10px;
+}
+
+
+
+
+
+  
+.box > .edie {
+    width: 40vmin;
+    height: 56vmin;
+    object-fit: cover;
+    object-position: 100% center;
+}
+  
+ 
