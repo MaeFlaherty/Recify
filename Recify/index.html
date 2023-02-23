@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		
+		<title> Recify </title>
+		<meta charset = "utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<script type = "text/javascript" src = "validation.js"></script>
+		<link rel="stylesheet" href="main.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+		<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/gfg.js"></script>
+		
+		
+		
+	</head>
+			
+	<body>
+		
+		<div id="menu">
+			<nav>
+				<ul>
+				<div id="header_image">
+					<img src = "Recify_logo.png" />
+			  
+				</div>
+				<li class="active"><a href="#">Home</a></li>
+			   	<li><a href="#">About Us</a></li>
+				<li><a href="#">Recipes</a></li>
+				<li><a href="#">Contact Us</a></li>
+				<li><a href="#">More</a></li>
+			  	</ul>
+			</nav>
+			
+	    </div>
+		
+		<div class = "parallax">
+			<div class="parallax-text">	
+				<h1 class="big-title"> Welcome to Recify!</h1>
+				<h3 class="title-2">See your fridge through a new lense.</h3>
+			</div>
+		</div>
+
+		<section class="section-light">
+
+			<b><center>What's in your pantry?</center></b> 	
+			<br></br>
+			<div id="search">
+		
+				<center><input type="ingredients" action = save.php method = "post" name="q" class="softbox" placeholder="Enter Ingredients from your Fridge: "></center>
+				<center><button type ="button" onclick = "valid();">Submit</button></center>
+			</div>
+			<br> </br>
+			<div class="box" data-mouse-down-at="0" data-prev-percentage="0">
+				<div class="edie ">
+					baking 
+					<button class="myButton" onclick="changeColor(this)">flour</button>
+					<button class="myButton" onclick="changeColor(this)">flour</button>
+					<button class="myButton" onclick="changeColor(this)">flour</button>
+					<button class="myButton" onclick="changeColor(this)">flour</button>
+					<button class="myButton" onclick="changeColor(this)">flour</button>
+					<button class="myButton" onclick="changeColor(this)">flour</button>
+					<button class="myButton" onclick="changeColor(this)">flour</button>
+					<button class="myButton" onclick="changeColor(this)">flour</button>
+				<button class="load-more">More</button>
+				<script>
+					$(document).ready(function(){
+						$(".edie").slice(0, 4).fadeIn();
+						$(".load-more").click(function(){
+							$(".edie").slice(0, 12).fadeIn();
+							$(this).fadeOut();
+						});
+					});
+				</script>
+					
+					
+				</div>
+				
+				<div class="edie">
+					baking 
+					<button class="myButton" onclick="changeColor(this)">flour</button>
+					<button class="myButton" onclick="changeColor(this)">flour</button>
+					<button class="myButton" onclick="changeColor(this)">flour</button>
+					<button class="myButton" onclick="changeColor(this)">flour</button>
+					<button class="myButton" onclick="changeColor(this)">flour</button>
+					<button class="myButton" onclick="changeColor(this)">flour</button>
+					<button class="myButton" onclick="changeColor(this)">flour</button>
+					<button class="myButton" onclick="changeColor(this)">flour</button>
+				<button class="load-more">More</button>
+					<script>
+						$(document).ready(function(){
+							$(".edie").slice(0, 4).fadeIn();
+							$(".load-more").click(function(){
+								$(".edie").slice(0, 12).fadeIn();
+								$(this).fadeOut();
+							});
+						});
+					</script>
+				</div>
+				<div class="edie">
+					baking 
+					<button class="myButton" onclick="changeColor(this)">flour</button>
+					<button class="myButton" onclick="changeColor(this)">flour</button>
+					<button class="myButton" onclick="changeColor(this)">flour</button>
+					<button class="myButton" onclick="changeColor(this)">flour</button>
+					<button class="myButton" onclick="changeColor(this)">flour</button>
+					<button class="myButton" onclick="changeColor(this)">flour</button>
+					<button class="myButton" onclick="changeColor(this)">flour</button>
+					<button class="myButton" onclick="changeColor(this)">flour</button>
+				<button class="load-more">More</button>
+					<script>
+						$(document).ready(function(){
+							$(".edie").slice(0, 4).fadeIn();
+							$(".load-more").click(function(){
+								$(".edie").slice(0, 12).fadeIn();
+								$(this).fadeOut();
+							});
+						});
+					</script>	
+				</div>
+				<div class="edie">
+					baking 
+					<button class="myButton" onclick="changeColor(this)">flour</button>
+					<button class="myButton" onclick="changeColor(this)">flour</button>
+					<button class="myButton" onclick="changeColor(this)">flour</button>
+					<button class="myButton" onclick="changeColor(this)">flour</button>
+					<button class="myButton" onclick="changeColor(this)">flour</button>
+					<button class="myButton" onclick="changeColor(this)">flour</button>
+					<button class="myButton" onclick="changeColor(this)">flour</button>
+					<button class="myButton" onclick="changeColor(this)">flour</button>
+				<button class="load-more">More</button>
+					<script>
+						$(document).ready(function(){
+							$(".edie").slice(0, 4).fadeIn();
+							$(".load-more").click(function(){
+								$(".edie").slice(0, 12).fadeIn();
+								$(this).fadeOut();
+							});
+						});
+					</script>
+				</div>
+
+				<div class="edie">
+					baking 
+					<button class="myButton" onclick="changeColor(this)">flour</button>
+					<button class="myButton" onclick="changeColor(this)">flour</button>
+					<button class="myButton" onclick="changeColor(this)">flour</button>
+					<button class="myButton" onclick="changeColor(this)">flour</button>
+					<button class="myButton" onclick="changeColor(this)">flour</button>
+					<button class="myButton" onclick="changeColor(this)">flour</button>
+					<button class="myButton" onclick="changeColor(this)">flour</button>
+					<button class="myButton" onclick="changeColor(this)">flour</button>
+				<button class="load-more">More</button>
+					<script>
+						$(document).ready(function(){
+							$(".edie").slice(0, 4).fadeIn();
+							$(".load-more").click(function(){
+								$(".edie").slice(0, 12).fadeIn();
+								$(this).fadeOut();
+							});
+						});
+					</script>
+				</div>
+			
+			</div>	
+					
+				<br></br>
+
+			
+		</section>
+		<br></br>
+		<br></br>
+		<br></br>
+		<br></br>
+		<div class = "parallax-2">
+			
+		</div>
+
+		<section class="section-dark">
+			<br><b><center>Some of our recommendations!</center> </b></br>
+			<div class="recs">
+				<div class="rec-1">
+					
+					<h3>recipe 1</h3>
+	
+				</div>
+				<div class="rec-2">
+					<h3>recipe 1</h3>
+	
+				</div>
+				<div class="rec-3">
+					<h3>recipe 1</h3>
+	
+				</div>
+
+			</div>
+		</section>
+		<section>
+	
+			<br></br>
+		</section>
+		<section class="section-4">
+			<footer>
+				<div class="footer-content">
+					<h3>Recify</h3>
+					<p>See your pantry through a new lens! From scraps to gourmet!
+						Imagine trying to find a recipe and you have to scroll through tons of text and by the time you find the recipe you don’t even want to cook it anymore. With Recify, You input ingredients you have in your fridge, pick a filter, and you have a list of recipes made just for you. No annoying sign ups, memberships, ads, fast and easy cooking. Recify is a no excuse way to start eating healthy and save money.</p>
+					
+				</div>
+				<div class="footer-bottom">
+					<p>copyright &copy;2023 Recify. designed by <span>Drexel Students</span></p>
+				</div>
+			</footer>
+		</section>
+		
+		<script src="gfg.js"></script>	
+		<script src="gfg.js"></script>
+		
+	</body>
+</html>
