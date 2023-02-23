@@ -7,10 +7,10 @@ for (var i = 0; i < buttons.length; i++) {
 }
 
 function changeColor(button) {
-  if (button.style.backgroundColor === "red") {
+  if (button.style.backgroundColor === "gray") {
     button.style.backgroundColor = "white" // change back to original color
   } else {
-    button.style.backgroundColor = "red"; // change color when clicked
+    button.style.backgroundColor = "gray"; // change color when clicked
   }
 }
 
@@ -59,3 +59,20 @@ window.ontouchend = e => handleOnUp(e.touches[0]);
 window.onmousemove = e => handleOnMove(e);
 
 window.ontouchmove = e => handleOnMove(e.touches[0]);
+
+
+var lastScrollTop = 0;
+window.addEventListener('scroll', function() {
+  var st = window.pageYOffset || document.documentElement.scrollTop;
+  var parallaxText = document.querySelector('.parallax-text');
+
+  if (st > lastScrollTop){
+    // Scroll down
+    parallaxText.classList.add('fade-out');
+  } else {
+    // Scroll up
+    parallaxText.classList.remove('fade-out');
+  }
+  
+  lastScrollTop = st <= 0 ? 0 : st;
+});

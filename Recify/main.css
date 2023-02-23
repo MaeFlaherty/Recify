@@ -1,4 +1,7 @@
 logo 
+
+
+
 html, body {
     height: 100%;
     margin: 0;
@@ -10,6 +13,7 @@ html, body {
 
 header{
     overflow: hidden;
+
 }
 
 #menu{
@@ -17,7 +21,7 @@ header{
     width: 68%;
     height: 100%;
     margin: none;
-    position: fixed;
+    position: absolute;
     transform: translate(85%, 0%);
 
 }
@@ -62,9 +66,7 @@ h1{
      text-align: center;
 }
 
-p{
-    text-align: center;
-}
+
 
 form{
     text-align: center;
@@ -107,14 +109,15 @@ body{
 .myButton{
     display: table-row;
     background-color: #f5f8fa;
-    width: 15%;
-    height: 15%;
+    width: 18%;
+    height: 10%;
     flex-direction: column;
     margin: 10px;
     text-align: center;
 }
 b{
     text-align: center;
+    font-size: 40px;
 }
 #search{
     position: absolute ;	
@@ -166,7 +169,7 @@ b{
 }
 .parallax {
     background-image: url(food2.jpg);
-    height: 900px; 
+    height: 1000px; 
     background-size: 100% 100%;
     background-attachment: fixed;
     background-position: center;
@@ -176,6 +179,10 @@ b{
 }
 p{
     color: white;
+    font-size: 60px;
+    text-align: center;
+    font-family: 'Lucida Sans Unicode';
+    letter-spacing: 2px;
 }
 
 
@@ -184,9 +191,9 @@ p{
     width: 20%;
     margin-bottom: 20px;
     margin-left: 60px;
-    height: 20%;
-    padding: 30px;
-    border: 50px solid #343b63;
+    height: 10%;
+    padding: 20px;
+    border: 30px solid #1e2d47;
     
 }
 
@@ -256,4 +263,133 @@ p{
     object-position: 100% center;
 }
   
- 
+.section section-light{
+    background-color: white;
+}
+
+
+.parallax-text {
+    position: relative;
+    z-index: 50;
+    font-weight: 400;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    opacity: 1;
+    transition: opacity 4s ease;
+    font-size: 40px;
+    font-family: 'Lucida Sans Unicode';
+    letter-spacing: 2px;
+    line-height: 6rem;
+
+}
+
+.parallax-text.fade-out {
+    opacity: 0;
+}
+.section-dark{
+    background-color: rgb(253, 253, 253);
+    object-fit: contain;
+    
+}
+.recs{
+    display: flex;
+    
+}
+.rec-1 {
+    
+    margin:0%;
+    text-align: center;
+    width: 500px;
+    height:500px;
+	margin:10px;
+	padding:10px;
+    background:rgb(75, 106, 146);
+    border-radius: 25px;
+}
+
+.rec-2 {
+    text-align: center;
+    width: 500px;
+    height:500px;
+	margin:10px;
+	padding:10px;
+    background:rgb(53, 76, 107);
+    border-radius: 25px;
+}
+
+.rec-3 {
+    text-align: center;
+    width: 500px;
+    height:500px;
+	margin:10px;
+	padding:10px;
+    background:rgb(38, 57, 81);
+    border-radius: 25px;
+}
+
+.parallax-2 {
+    background-image: url(g/food5.jpg);
+    height: 800px; 
+    background-size: 50% 50%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    text-align: center;   
+}
+footer{
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #111;
+    height: auto;
+    width: 100vw;
+    font-family: "Open Sans";
+    padding-top: 40px;
+    color: #fff;
+}
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.footer-content h3{
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+.footer-content p{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+}
+
+
+.footer-bottom{
+    background: #000;
+    width: 100vw;
+    padding: 20px 0;
+    text-align: center;
+}
+.footer-bottom p{
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+.footer-bottom span{
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 200;
+}
+
+
+
