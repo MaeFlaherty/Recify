@@ -1,85 +1,130 @@
-*{
-    margin: 10;
-    padding: 10;
+logo 
+
+
+
+html, body {
+    height: 100%;
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.8cm;
+    box-sizing: border-box;
+
 }
+
+header{
+    overflow: hidden;
+
+}
+
+#menu{
+    float: right;
+    width: 68%;
+    height: 100%;
+    margin: none;
+    position: absolute;
+    transform: translate(85%, 0%);
+
+}
+     
+#menu ul{
+    text-align: center;
+    float: right;
+    margin: none;
+    background: #121a2b;
+    width: 200%;
+}
+     
+#menu li{
+    display: inline-block;
+    padding: none;
+    margin: none;
+    font-size: medium;
+}
+     
+#menu li a, #menu li span{
+    display: inline-block;
+    padding: 0em 1.5em;
+    text-decoration: none;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 70px;
+}
+     
+#menu li a{
+         
+    color: #FFF;
+}
+     
+#menu li:hover a, #menu li span{
+    background: #FFF;
+    color: #58432a;
+    border-left: 1px solid #0074D9;
+    text-decoration: none;
+}
+
 h1{
      text-align: center;
 }
 
-p{
-    text-align: center;
-}
+
 
 form{
     text-align: center;
 }
-.header{
-    min-height: 100vh;
-    width: 100%;
-    background-image: linear-
-    gradient rgba(0,105,112,0.6),rgba(0,105,112,0.6),url(image/bread 1.jpeg)
-    ;
-    background-position: top;
-    background-size : contain;
-    position: relative;
-        
+body{ 
+    background: #f8f7f7;
+      
 }
-#body{ 
-    background-image: url("image/bread 1.jpeg");
- }
- #boxes > .vegetables-box {
-    width: 80vmin;
+
+#boxes > vegetables-box {
+    width: 40vmin;
     height: 56vmin;
-    object-position: center;
     object-fit: cover;
+    object-position: center;
+    
 
 }
 #boxes {
+
     display: flex;
-    gap: 4vmin;
-    position: absolute; top: 50%; transform: translate(0%, -50%);
-    
+    width: 1500px;
+    height: 300px;
+    gap: 4vmin;   
 }
-    #bake-box {
-                border-style: outset;
-                border-width: 5px;
-                border-color: ghostwhite;
-                padding: 7px;
-                width: 40%;
-                text-align: center;
-                
-        }
-    #vegan-box {
-                border-style: outset;
-                border-width: 5px;
-                border-color: ghostwhite;
-                padding: 7px;
-                width: 40%;
-                text-align: center;
 
+#vegetables-box {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    justify-content: space-between;
+    border-style: outset;
+    border-width: 7px;
+    border-color: rgb(169, 169, 171);
+    padding: 7px;
+    text-align: center;
+    width: 30%;
+    background-color: white;                                
+}   
 
-                
-        }
-    #vegetables-box {
-                border-style: outset;
-                border-width: 5px;
-                border-color: ghostwhite;
-                padding: 7px;
-                text-align: center;
-                width: 80%;
-
-                
-        }   
-
-
+.myButton{
+    display: table-row;
+    background-color: #f5f8fa;
+    width: 18%;
+    height: 10%;
+    flex-direction: column;
+    margin: 10px;
+    text-align: center;
+}
 b{
     text-align: center;
+    font-size: 40px;
 }
-.search{
-    position: absolute;	text-align: center;
-	width: 100%;left: 50%;top: 50%;
-	transform: translate(-50%, -50%);
+#search{
+    position: absolute ;	
     text-align: center;
+	width: 100%;
+	transform: translate(0%, -50%);
+    
 }
 .softbox{
 	transition: border .2s linear;
@@ -91,11 +136,11 @@ b{
 }
 .softbox:focus{
 	transition: border .2s linear;
-	border: 2px solid rgb(0, 110, 255);
+	border: 2px solid rgb(68, 109, 165);
 }
 .softbtn{
     position: absolute;
-	font-size: 20px;color: #66757f;
+	font-size: 20px;color: #6b93ad;
 	background-color: transparent;
 	border:none;right: 24%;
 	top: 5px;outline: none;
@@ -104,3 +149,247 @@ b{
 .placeholder{
     text-align: center;
 }
+
+#header_image{
+
+    float: left;
+    padding: none;
+    margin: none;
+    height: 10px;
+    width: 20%;
+}
+#header_image img{
+    width: 40%;
+    float: left;
+    padding: 0px;
+}
+
+#margin {
+    margin: 75% 0;
+}
+.parallax {
+    background-image: url(food2.jpg);
+    height: 1000px; 
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    text-align: center;   
+}
+p{
+    color: white;
+    font-size: 60px;
+    text-align: center;
+    font-family: 'Lucida Sans Unicode';
+    letter-spacing: 2px;
+}
+
+
+.edie {
+    background-color: white;
+    width: 20%;
+    margin-bottom: 20px;
+    margin-left: 60px;
+    height: 10%;
+    padding: 20px;
+    border: 30px solid #1e2d47;
+    
+}
+
+.box {
+   
+    justify-content: space-between;
+    display: flex;
+   
+    position: absolute;
+    top: 200%;
+    transform: translate(0%, -50%); 
+    user-select: none; /* -- Prevent image highlighting -- */
+}
+.edie myButton{
+    width: 100%;
+
+}
+
+.load-more{
+    display: block;
+    margin: auto;
+    height: 50px;
+    padding: 0 50px;
+    border: 0;
+    border-radius: 6px;
+    background-color: #0074D9;
+    color: #f5f8fa;
+    font-size: 16px;
+    cursor: pointer;
+    transition: .3s linear;
+}
+.load-more:hover{
+    opacity: .8;
+
+}
+
+
+.box-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 50px;
+}
+
+.button {
+    background-color: blue;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.buttonss{
+    width: calc(50% - 5px);
+    margin-bottom: 10px;
+}
+
+
+
+
+
+  
+.box > .edie {
+    width: 40vmin;
+    height: 56vmin;
+    object-fit: cover;
+    object-position: 100% center;
+}
+  
+.section section-light{
+    background-color: white;
+}
+
+
+.parallax-text {
+    position: relative;
+    z-index: 50;
+    font-weight: 400;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    opacity: 1;
+    transition: opacity 4s ease;
+    font-size: 40px;
+    font-family: 'Lucida Sans Unicode';
+    letter-spacing: 2px;
+    line-height: 6rem;
+
+}
+
+.parallax-text.fade-out {
+    opacity: 0;
+}
+.section-dark{
+    background-color: rgb(253, 253, 253);
+    object-fit: contain;
+    
+}
+.recs{
+    display: flex;
+    
+}
+.rec-1 {
+    
+    margin:0%;
+    text-align: center;
+    width: 500px;
+    height:500px;
+	margin:10px;
+	padding:10px;
+    background:rgb(75, 106, 146);
+    border-radius: 25px;
+}
+
+.rec-2 {
+    text-align: center;
+    width: 500px;
+    height:500px;
+	margin:10px;
+	padding:10px;
+    background:rgb(53, 76, 107);
+    border-radius: 25px;
+}
+
+.rec-3 {
+    text-align: center;
+    width: 500px;
+    height:500px;
+	margin:10px;
+	padding:10px;
+    background:rgb(38, 57, 81);
+    border-radius: 25px;
+}
+
+.parallax-2 {
+    background-image: url(g/food5.jpg);
+    height: 800px; 
+    background-size: 50% 50%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    text-align: center;   
+}
+footer{
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #111;
+    height: auto;
+    width: 100vw;
+    font-family: "Open Sans";
+    padding-top: 40px;
+    color: #fff;
+}
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.footer-content h3{
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+.footer-content p{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+}
+
+
+.footer-bottom{
+    background: #000;
+    width: 100vw;
+    padding: 20px 0;
+    text-align: center;
+}
+.footer-bottom p{
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+.footer-bottom span{
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 200;
+}
+
+
+
