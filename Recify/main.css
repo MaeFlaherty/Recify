@@ -72,7 +72,7 @@ form{
     text-align: center;
 }
 body{ 
-    background: #244151;
+    background: #1f3747;
       
 }
 
@@ -108,12 +108,14 @@ body{
 
 .myButton{
     display: table-row center;
-    background-color: #f5f8fa;
+    background-color: #ffffff;
     width: 18%;
+    border-radius: 15px;
     height: 10%;
-    flex-direction: column;
     margin: 10px;
     text-align: center;
+    font-family: 'Lucida Sans Unicode'
+    font-size: 20px;    
 }
 b{
     text-align: center;
@@ -181,19 +183,25 @@ b{
 }
 p{
     color: white;
-    font-size: 60px;
+    font-size: 20px;
     text-align: center;
     font-family: 'Lucida Sans Unicode';
-    letter-spacing: 2px;
+    letter-spacing: 1px;
 }
 
 
 .edie {
     background-color: white;
-    border-radius: 25px;
-    background: #244151;
-    box-shadow: inset 35px 35px 22px #0e1a20,
-                inset -35px -35px 22px #3a6882;
+    border-radius: 60px;
+    width: 50%;
+   
+    background: linear-gradient(145deg, #2d5267, #203b49);
+    box-shadow:  35px 35px 47px #080f12,
+                -35px -35px 47px #3c6d88;
+    
+    
+   
+    
     margin-bottom: 20px;
     margin-left: 60px;
    
@@ -220,12 +228,12 @@ p{
     display: block;
     margin: auto;
     height: 50px;
-    padding: 0 50px;
+    padding: 0 30px;
     border: 0;
-    border-radius: 6px;
-    background-color: #0074D9;
+    border-radius: 12px;
+    background-color: #0a8dffb0;
     color: #f5f8fa;
-    font-size: 16px;
+    font-size: 12px;
     cursor: pointer;
     transition: .3s linear;
 }
