@@ -72,7 +72,7 @@ form{
     text-align: center;
 }
 body{ 
-    background: #1f3747;
+    background: #ffffff;
       
 }
 
@@ -195,12 +195,14 @@ p{
     border-radius: 60px;
     width: 50%;
    
-    background: linear-gradient(145deg, #2d5267, #203b49);
-    box-shadow:  35px 35px 47px #080f12,
-                -35px -35px 47px #3c6d88;
-    
-    
+    border-radius: 35px;
+    background: #1f3747;
+    box-shadow: inset 48px 48px 46px #101c2495,
+            inset -48px -48px 46px #2f536b;
    
+    
+              
+    
     
     margin-bottom: 20px;
     margin-left: 60px;
