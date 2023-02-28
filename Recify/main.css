@@ -118,16 +118,19 @@ body{
     font-size: 20px;    
 }
 b{
+    position: absolute; left: 520px; top: 1100px; ;
     text-align: center;
     font-size: 40px;
-    color: #FFF;
+    color: #000000;
+    
 }
 #search{
-    position: absolute ;	
+    position: absolute; left: 15px; top: 1200px;
+    	
     text-align: center;
 	width: 100%;
-    height: 35%;
-	transform: translate(0%, -50%);
+    height: 45%;
+	
     
 }
 .softbox{
@@ -140,11 +143,11 @@ b{
 }
 .softbox:focus{
 	transition: border .2s linear;
-	border: 2px solid rgb(74, 4, 4);
+	border: 2px solid rgb(23, 40, 73);
 }
 .softbtn{
     position: absolute;
-	font-size: 20px;color: #460505;
+	font-size: 20px;color: #052146;
 	background-color: transparent;
 	border:none;right: 24%;
 	top: 5px;outline: none;
