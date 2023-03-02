@@ -1,16 +1,13 @@
 logo 
 
-
-
 html, body {
-    height: 100%;
+    
     margin: 0;
-    font-size: 16px;
-    line-height: 1.8cm;
-    box-sizing: border-box;
+   
     
 
 }
+
 
 
 header {
@@ -21,9 +18,10 @@ header {
 
 #menu{
     float: right;
-    width: 60%;
+    width: 40%;
     height: 100%;
     margin: 0;
+    
 }
      
 #menu ul{
@@ -66,6 +64,7 @@ header {
     margin: 0;
     background: #121a2b;
     width: 200%;
+    position: absolute; left: -10%;
 }
      
 
@@ -91,13 +90,15 @@ body{
     border-radius: 15px;
     height: 10%;
     margin: 10px;
-    text-align: auto;
+    text-align: center;
     font-family: 'Lucida Sans Unicode';
     font-size: 10px;    
+    position: relative; left: 12%; 
+    
 }
 
 b{
-    position: relative; left: 40px; top: 70px; ;
+    position: relative; left: 40px; top: 20px; ;
     text-align: auto;
     font-size: 40px;
     color: #c92727;
@@ -155,14 +156,14 @@ b{
 }
 .parallax {
     background-image: url(food2.jpg);
-    width: 100%;
-    height: 1000px; 
-    background-size: 100% 100%;
+      
+    height: 800px; 
+    background-size: 50% 50%;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover; 
-    text-align: center;   
+    text-align: center; 
 }
 p{
     color: white;
@@ -177,30 +178,31 @@ p{
     background-color: white;
     border-radius: 60px;
     width: 50%;
-   
+    top: 0%;
     border-radius: 35px;
     background: #1f3747;
     box-shadow: inset 48px 48px 46px #101c2495,
             inset -48px -48px 46px #2f536b;
 
-    margin-bottom: 20px;
+    
     margin-left: 60px;
-    position: relative;  top: 300px;
+    position: relative;
    
 
     
 }
-
 .box {
    
     justify-content: space-between;
     display: flex;
-   
-    position: absolute;
-    top: 200%;
-    transform: translate(0%, -50%); 
-    user-select: none; /* -- Prevent image highlighting -- */
+    
+    top: 100%;
+  
+    
+  
+    
 }
+
 .edie myButton{
     width: 100%;
 
@@ -238,6 +240,7 @@ p{
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
+
 }
 
 .buttonss{
@@ -258,7 +261,7 @@ p{
 }
   
 .section-light{
-   
+    height: 100%;
     background-color: rgb(253, 253, 253);
     object-fit: contain;
 }
@@ -290,6 +293,11 @@ p{
     background-color: rgb(253, 253, 253);
     object-fit: contain;
     
+}
+.section-gray{
+    background-color: rgb(253, 253, 253);
+    object-fit: contain;
+    height: 100%;
 }
 .recs{
     display: flex;
@@ -338,6 +346,8 @@ p{
     background-repeat: no-repeat;
     background-size: cover; 
     text-align: center;   
+    
+    
 }
 footer{
     position: relative;
@@ -401,6 +411,7 @@ div{
     display: flex;
     width: 90%;
     justify-content: space-around; 
+    margin-left: 60px;
 }
   
 .card {
@@ -479,7 +490,5 @@ div{
           background: dodgerblue;
           color: white; 
 }
-
-
 
 
