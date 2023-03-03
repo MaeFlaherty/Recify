@@ -192,15 +192,11 @@ p{
     
 }
 .box {
-   
     justify-content: space-between;
     display: flex;
     
     top: 100%;
   
-    
-  
-    
 }
 
 .edie myButton{
@@ -490,5 +486,7 @@ div{
           background: dodgerblue;
           color: white; 
 }
+
+
 
 
