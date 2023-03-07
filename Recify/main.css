@@ -10,6 +10,7 @@ html, body {
 
 
 
+
 header {
     
     overflow: hidden;
@@ -187,6 +188,8 @@ p{
     
     margin-left: 60px;
     position: relative;
+    flex: 0 0 auto;
+   
    
 
     
