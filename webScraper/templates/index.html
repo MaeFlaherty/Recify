@@ -1,0 +1,45 @@
+$def with (title, ing, inst)
+
+<!DOCTYPE = html>
+<html>
+<head> 
+	<title>Recipe Test Page</title>
+	<style>
+		* {
+			color: black;
+			font-family: Lucida Sans Unicode;
+		}
+
+		body{
+			background: white;
+		}
+
+		.container{
+			border: 3px solid darkblue;
+		}
+
+		h1 {
+			font-family: Lucida Sans Unicode;
+			text-align: center;
+		}
+	</style>
+</head>
+
+<body>
+	<div class = "container" style = "width: 100%; height: 100%;">
+		<div style = "margin-left : auto; margin-right: auto;">
+			<h1>$title</h1>
+			<h3>Ingredients</h3>
+			<ul>
+				$for i in ing
+				<li>$i</li>
+			</ul>
+			<h3>Instructions</h3>
+			<ol>
+				$for s in inst
+				<li>$s</li>
+			</ol>
+		</div>
+	</div>
+</body>
+</html>

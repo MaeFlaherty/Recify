@@ -2,6 +2,7 @@ from bs4 import BeautifulSoup
 import json
 from urllib.request import urlopen, Request
 import sys
+#import web
 
 ok = False
 #Creates a fake browser visit to avoid 403 forbidden errors
@@ -16,25 +17,26 @@ def get_ld_json(url: str) -> dict:
     return json.loads("".join(soup.find("script", {"type":"application/ld+json"}).contents))
 
 
-url = input("enter site URL: ")
-
-data = get_ld_json(url)
-
-ingredients = data["recipeIngredient"]
-
-instructions = data["recipeInstructions"]
-
-print("\n" + data["name"] + "\n")
-
-print ("<h2>*****INGREDIENTS*****<h2>")
-for count, ing in enumerate(ingredients):
-	print(ing + "\n")
-
-print ("<h2>*****INSTRUCTIONS*****<h2>")
-for count, inst in enumerate(instructions):
-	print(f"{count}. \n" + instructions[count]["text"] + "\n")
 
 
+if __name__ == "__main__":
+    url = input("enter site URL: ")
+
+    data = get_ld_json(url)
+
+    ingredients = data["recipeIngredient"]
+
+    instructions = data["recipeInstructions"]
+
+    print("\n" + data["name"] + "\n")
+
+    print ("<h2>*****INGREDIENTS*****<h2>")
+    for count, ing in enumerate(ingredients):
+        print(ing + "\n")
+
+    print ("<h2>*****INSTRUCTIONS*****<h2>")
+    for count, inst in enumerate(instructions):
+        print(f"{count}. \n" + instructions[count]["text"] + "\n")
 
 
 

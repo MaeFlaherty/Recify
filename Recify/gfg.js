@@ -14,6 +14,12 @@ function changeColor(button) {
   }
 }
 
+
+//MAE'S CODE
+function generateRecipe(){
+  window.open(("http://0.0.0.0:8080/" + document.getElementById("recipeForm").elements["link"].value),"_blanks") 
+}
+
 const track = document.getElementById("image-track");
 
 const handleOnDown = e => track.dataset.mouseDownAt = e.clientX;
