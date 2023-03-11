@@ -6,6 +6,41 @@ html, body {
 
 }
 
+.contains{
+    background-color: #ffffff;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+   
+    height: 400px;
+   
+   
+   
+  
+    
+}
+.contains  .edie {
+    background-color: white;
+    border-radius: 60px;
+    width: 300px;
+    top: 0%;
+    border-radius: 35px;
+    background: #1f3747;
+    box-shadow: inset 48px 48px 46px #101c2495,
+            inset -48px -48px 46px #2f536b;
+ 
+ 
+   
+    margin-left: 60px;
+    position: relative;
+    flex: 0 0 auto;
+  
+  
+ 
+ 
+   
+}
+ 
 
 
 header {
@@ -185,6 +220,8 @@ p{
     
     margin-left: 60px;
     position: relative;
+    flex: 0 0 auto;
+   
    
 
     
