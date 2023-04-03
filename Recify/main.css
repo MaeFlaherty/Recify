@@ -134,7 +134,7 @@ b{
     position: relative; left: 40px; top: 20px; ;
     text-align: auto;
     font-size: 40px;
-    color: #c92727;
+    color: #000000;
     
 }
 #search{
@@ -297,6 +297,14 @@ p{
     margin: 50px;
 }
 
+
+
+.buttonss{
+    width: calc(50% - 5px);
+    margin-bottom: 10px;
+}
+
+
 .button {
     background-color: blue;
     color: white;
@@ -306,14 +314,6 @@ p{
     cursor: pointer;
 
 }
-
-.buttonss{
-    width: calc(50% - 5px);
-    margin-bottom: 10px;
-}
-
-
-
 
 
   
