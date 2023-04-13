@@ -100,7 +100,10 @@ header {
     position: absolute; left: -10%;
 }
      
-
+#menu nav ul{
+    transform:translatex(70px) translatey(-6px);
+    padding-left:328px;
+}
 
 h1{
      text-align: auto;
