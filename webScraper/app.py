@@ -20,11 +20,12 @@ class index:
                 name = data["name"]
                 ingredients = data["recipeIngredient"]
                 instructions = data["recipeInstructions"]
+                image = data["image"]
                 instructionsList = []
                 for count, inst in enumerate(instructions):
                     instructionsList.append(instructions[count]["text"])
 
-                return self.render.index(name, ingredients, instructionsList)
+                return self.render.index(name, ingredients, instructionsList, image[0])
 
             except:
                 link = "Couldn't generate recipe, try again"

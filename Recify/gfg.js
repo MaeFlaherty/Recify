@@ -16,8 +16,8 @@ function changeColor(button) {
 
 
 //MAE'S CODE
-function generateRecipe(){
-  window.open(("http://0.0.0.0:8080/" + document.getElementById("recipeForm").elements["link"].value),"_blanks") 
+function generateRecipe(link = document.getElementById("recipeForm").elements["link"].value){
+    window.open(("http://0.0.0.0:8080/" + link),  "_blanks")
 }
 
 const track = document.getElementById("image-track");
