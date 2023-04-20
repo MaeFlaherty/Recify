@@ -30,7 +30,7 @@ header {
     margin-left: 10px;
  
  
- }
+}
  
 
 
@@ -63,7 +63,7 @@ header {
 .ingredients {
     width: 500px;
     height: 740px;
-    background-color: rgb(255, 255, 255);
+    background-color: #31394b35;
     border: 2px solid black;
     border-radius: 30px;
     float: right;
