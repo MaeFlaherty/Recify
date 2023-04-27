@@ -35,8 +35,8 @@ header {
 
 
 .circle {
-    width: 270px;
-    height: 270px;
+    width: 20vw;
+    height: 40vh;
     background-color: gray;
     border-radius: 50%;
     display: flex;
@@ -62,14 +62,15 @@ header {
  
 .ingredients {
     width: 500px;
-    height: 740px;
-    background-color: #31394b35;
+    height: 760px;
+    background-color: #ffffff;
     border: 2px solid black;
     border-radius: 30px;
     float: right;
     margin-top: 70px;
     margin-right: 15px;
     color: black;
+    display: flex;
  
 }
 h1{
@@ -199,4 +200,56 @@ h2{
   
    
    
-   
+/* Steps */
+.steps{
+  width:516px;
+  padding-left:81px;
+  transform:translatex(0px) translatey(0px);
+ }
+ 
+ /* List Item */
+ .ingredients ul li{
+  padding-left:23px;
+  transform:translatex(0px) translatey(0px);
+ }
+ 
+ /* Ingredients */
+ .ingredients{
+  padding-left:34px;
+ }
+ 
+ /* Image */
+ .circle img{
+  transform:translatex(0px) translatey(0px);
+ }
+ 
+ 
+/* Ingredients */
+.ingredients{
+  margin-left:0px;
+  width:461px;
+  transform:translatex(6px) translatey(11px);
+  margin-top:0px;
+ }
+ 
+ /* List Item */
+ .ingredients ul li{
+  padding-top:16px;
+  transform:translatex(0px) translatey(-17px);
+ }
+ 
+/* Ingredients */
+.ingredients{
+  min-height:849px;
+  transform:translatex(15px) translatey(-39px);
+ }
+ 
+ /* List */
+ .ingredients .info ul{
+  transform:translatex(10px) translatey(32px);
+ }
+ 
+ /* Body */
+ body{
+  transform:translatex(6px) translatey(-15px);
+ }
