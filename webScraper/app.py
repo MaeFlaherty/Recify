@@ -18,12 +18,13 @@ class index:
                 data = webScraper.get_ld_json(link)
 
                 name = data["name"]
-                ingredients = data["recipeIngredient"]
+                ingredients = webScraper.stripList(data["recipeIngredient"])
                 instructions = data["recipeInstructions"]
                 image = data["image"]
                 instructionsList = []
                 for count, inst in enumerate(instructions):
                     instructionsList.append(instructions[count]["text"])
+                instructionsList = webScraper.stripList(instructionsList)
 
                 return self.render.index(name, ingredients, instructionsList, image[0])
 

@@ -2,6 +2,7 @@ from bs4 import BeautifulSoup
 import json
 from urllib.request import urlopen, Request
 import sys
+import re
 #import web
 
 ok = False
@@ -16,7 +17,15 @@ def get_ld_json(url: str) -> dict:
     soup = BeautifulSoup(html, parser)
     return json.loads("".join(soup.find("script", {"type":"application/ld+json"}).contents))
 
+def stripHtml(text = str):
+    p = re.compile(r'<.*?>')
+    return p.sub("", text)
 
+def stripList(itemList = list):
+    newList = []
+    for i in itemList:
+        newList.append(stripHtml(i))
+    return newList
 
 
 if __name__ == "__main__":
@@ -24,10 +33,11 @@ if __name__ == "__main__":
 
     data = get_ld_json(url)
 
-    ingredients = data["recipeIngredient"]
+    ingredients = stripList(data["recipeIngredient"])
 
     instructions = data["recipeInstructions"]
 
+    
     print("\n" + data["name"] + "\n")
 
     print ("<h2>*****INGREDIENTS*****<h2>")
