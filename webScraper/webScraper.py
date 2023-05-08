@@ -15,7 +15,16 @@ def get_ld_json(url: str) -> dict:
     req = Request(url, headers = headers)
     html = urlopen(req)
     soup = BeautifulSoup(html, parser)
-    return json.loads("".join(soup.find("script", {"type":"application/ld+json"}).contents))
+
+    #This makes the scraper work with sally's baking addiction
+    if soup.find("script", {"class":"yoast-schema-graph"}):
+        print("Schema.com file")
+        data = json.loads("".join(soup.find("script", {"type":"application/ld+json"})))
+        #print (data["@graph"][7]["recipeIngredient"])#test statement for debugging
+        return (data["@graph"][7])
+
+    #Works with NYT cooking and any othe non schema based recipe sites
+    return json.loads("".join(soup.find("script", {"type":"application/ld+json"})))
 
 def stripHtml(text = str):
     p = re.compile(r'<.*?>')
@@ -30,7 +39,6 @@ def stripList(itemList = list):
 
 if __name__ == "__main__":
     url = input("enter site URL: ")
-
     data = get_ld_json(url)
 
     ingredients = stripList(data["recipeIngredient"])
