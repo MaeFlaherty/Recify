@@ -1,9 +1,12 @@
  
 html, body {
-    height: 100%;
     margin: 0;
-    width: 100%;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
     background-color: #31394b
+
 
 }
 header {
@@ -27,7 +30,7 @@ header {
     border-radius: 30px;
     float: left;
     margin-top: 65px;
-    margin-left: 10px;
+    margin-left: 30px;
  
  
 }
@@ -35,10 +38,10 @@ header {
 
 
 .circle {
-    width: 20vw;
-    height: 40vh;
+    width: 300px;
+    height: 300px;
     background-color: gray;
-    border-radius: 50%;
+    border-radius: 50% 50% 50% 50%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -47,12 +50,12 @@ header {
     top: 30%;
     left: 50%;
     transform: translate(-30%, -50%);
+
 }
 .circle img {
-    width: 100%;
+    width: auto;
     height: auto;
-    border-radius: 50%;
-    object-fit: cover;
+    object-fit: scale-down;
 }
  
 .title{
@@ -62,17 +65,30 @@ header {
  
 .ingredients {
     width: 500px;
-    height: 760px;
+    height: auto;
     background-color: #ffffff;
     border: 2px solid black;
     border-radius: 30px;
     float: right;
-    margin-top: 70px;
-    margin-right: 15px;
+    margin-top: 40px;
+    margin-right: 30px;
+    padding-left: 5px;
+    padding-right: 5px;
+    min-height:80vh;
     color: black;
     display: flex;
- 
+    flex-direction: column;
+    
 }
+
+.ingredients .info{
+  padding-top: 10px;
+  margin-bottom: 15px;
+}
+
+.ingredients ul li{
+  padding-top:16px;
+ }
 h1{
     text-align: center;
 
@@ -91,9 +107,11 @@ h2{
     position: fixed;
     width: 240px;
     left: -240px;
-    height: 100%;
+    min-height: 100vh;
     background: #121a2b;
     transition: all .5s ease;
+    
+    z-index: 1000;
   }
   .sidebar header{
     font-size: 28px;
@@ -132,6 +150,8 @@ h2{
   }
   #check{
     display: none;
+    position: fixed;
+    z-index: 2000;
   }
   label #btn,label #cancel{
     position: absolute;
@@ -140,6 +160,7 @@ h2{
     border-radius: 5px;
     border: 1px solid #262626;
     margin: 15px 30px;
+    margin-top: 30px;
     font-size: 29px;
     background: #1d2945;
     height: 45px;
@@ -152,6 +173,7 @@ h2{
     opacity: 0;
     visibility: hidden;
   }
+
   #check:checked ~ .sidebar{
     left: 0;
   }
@@ -164,6 +186,8 @@ h2{
     margin-left: 245px;
     opacity: 1;
     visibility: visible;
+    position: fixed;
+    z-index: 2000;
   }
   @media(max-width : 860px){
     .sidebar{
@@ -194,6 +218,7 @@ h2{
     .sidebar a:hover span{
       opacity: 1;
       visibility: visible;
+      
     }
   }
 
@@ -218,38 +243,22 @@ h2{
   padding-left:34px;
  }
  
- /* Image */
- .circle img{
-  transform:translatex(0px) translatey(0px);
- }
- 
- 
 /* Ingredients */
 .ingredients{
   margin-left:0px;
   width:461px;
   transform:translatex(6px) translatey(11px);
-  margin-top:0px;
  }
  
  /* List Item */
- .ingredients ul li{
-  padding-top:16px;
-  transform:translatex(0px) translatey(-17px);
- }
  
-/* Ingredients */
-.ingredients{
-  min-height:849px;
-  transform:translatex(15px) translatey(-39px);
- }
  
  /* List */
  .ingredients .info ul{
-  transform:translatex(10px) translatey(32px);
+  transform:translatex(10px) translatey(15px);
+  position: relative;
+  z-index: 1;
  }
  
  /* Body */
- body{
-  transform:translatex(6px) translatey(-15px);
- }
+ 
