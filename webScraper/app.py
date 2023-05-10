@@ -1,5 +1,6 @@
 import web
 import webScraper
+from webScraper import Recipe
 
 urls = (
     '/(.*)', 'index'
@@ -23,32 +24,9 @@ class index:
                 link = "Couldn't generate recipe, try again"
                 return link
 
-            try:
-                name = data["name"]
-                print(name)
-            except KeyError:
-                name = "NULL"
-
-            try:
-                ingredients = webScraper.stripList(data["recipeIngredient"])
-            except KeyError:
-                ingredients = ["Not Found"]
-
-            try: 
-                image = data["image"]
-            except:
-                image = "Not Found"
-
-            try: 
-                instructions = data["recipeInstructions"]
-            except KeyError:
-                instructions = [{"text": "Not Found"}]
-
-            instructionsList = []
-            for count, inst in enumerate(instructions):
-                instructionsList.append(instructions[count]["text"])
-            instructionsList = webScraper.stripList(instructionsList)
-            return self.render.index(name, ingredients, instructionsList, image[0])
+            recipe = Recipe(data)
+            
+            return self.render.index(recipe.name, recipe.ingredients, recipe.instructions, recipe.image)
             
 
             
