@@ -90,6 +90,8 @@ header {
   display: flex;
   flex-direction: column;
   transform:translatex(36px) translatey(0px);
+
+  
     
 }
 .steps .info h1{
