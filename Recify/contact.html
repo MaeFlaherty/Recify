@@ -1,70 +1,83 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Recify - Contact Us</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <script type="text/javascript" src="validation.js"></script>
-  <link rel="stylesheet" href="main.css">
-  
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-  <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/gfg.js"></script>
+	<title>Contact Us - Recify</title>
+	<meta charset="utf-8">
+	<link rel="icon" type="image/x-icon" href="Recify_logo.png">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="contactUs.css">
+	<script type="text/javascript" src="validation.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/gfg.js"></script>
 </head>
-<header>
-	<div id="menu">
-		<nav>
-		  <ul>
-			<div id="header_image"><img src="Recify_logo.png" alt="Recify_logo"></div>
-			<li>
-			  <a href="index.html">Home</a>
-			</li>
-			<li>
-			  <a href="about.html">About Us</a>
-			</li>
-			<li>
-			  <a href="#">Recipes</a>
-			</li>
-			<li class="active">
-			  <a href="#">Contact Us</a>
-			</li>
-			<li>
-			  <a href="#">More</a>
-			</li>
-		  </ul>
-		</nav>
-	  </div>
-</header>
 <body>
+	<header>
+		<input type="checkbox" id="check">
+		<label for="check">
+		  <i class="fas fa-bars" id="btn"></i>
+		  <i class="fas fa-times" id="cancel"></i>
+		</label>
+		<div class="sidebar">
+			<div id="header_image"><img src="Recify_logo.png" alt="Recify_logo"></div>
+			<header>My Menu</header>
+			<a href="recipe-generator-site/Recify/index.html">
+				<i class="fas fa-qrcode"></i>
+				<span>Home</span>
+			</a>
+			<a href="#">
+				<i class="fas fa-link"></i>
+				<span>About Us</span>
+			</a>
+			<a href="#">
+				<i class="fas fa-stream"></i>
+				<span>Recipes</span>
+			</a>
+			<a href="#" class="active">
+				<i class="fas fa-calendar"></i>
+				<span>Contact Us</span>
+			</a>
+			<a href="#">
+				<i class="far fa-question-circle"></i>
+				<span>More</span>
+			</a>
+		</div>
+	</header>
 
-  <div class="parallax">
-    <div class="parallax-text">
-      <h1 class="big-title">Contact Us</h1>
-      <h3 class="title-2">We'd love to hear from you!</h3>
-    </div>
-  </div>
+	<div class="container1"></div>
+	<div class="outer-container">
+		<div class="container">
+			<h1>Contact Us</h1>
+			<form id="contact-form" action="#" method="post">
+				<label for="name">Name</label>
+				<input type="text" id="name" name="name" required>
+
+				<label for="email">Email</label>
+				<input type="email" id="email" name="email" required>
+
+				<label for="message">Message</label>
+				<textarea id="message" name="message" required></textarea>
+
+				<button type="submit" class="myButton">Send</button>
+			</form>
+		</div>
+	</div>
+
+  <script>
+    document.getElementById("contact-form").addEventListener("submit", function(event) {
+      var nameInput = document.getElementById("name");
+      var emailInput = document.getElementById("email");
+      var subjectInput = document.getElementById("subject");
+      var messageInput = document.getElementById("message");
   
-  <br></br>
-  <section class="section-light">
-    <center>
-      <b>Send us a message:</b>
-    </center>
-    
-    <br></br>
-    <br></br>
-    <div id="contact-form">
-      <center>
-      <form>
-        <input type="text" name="name" class="softbox" placeholder="Name" required><br><br>
-        <input type="email" name="email" class="softbox" placeholder="Email" required><br><br>
-        <textarea name="message" class="softbox" placeholder="Message" required></textarea><br><br>
-        <button type="submit" class="myButton">Send Message</button>
-      </form>
-      </center>
-    </div>
-  </section>
-  
+      if (!nameInput.checkValidity() || !emailInput.checkValidity() || !subjectInput.checkValidity() || !messageInput.checkValidity()) {
+        // Display an error message or handle invalid input
+        event.preventDefault();
+      }
+    });
+  </script>
+
 </body>
 </html>
