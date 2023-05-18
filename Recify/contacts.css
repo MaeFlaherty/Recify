@@ -1,0 +1,320 @@
+@import url("//fonts.googleapis.com/css2?family=Piazzolla:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
+@import url("//fonts.googleapis.com/css2?family=Habibi:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
+@import url('https://fonts.cdnfonts.com/css/imelda');
+html, body {
+    
+    margin: 0;
+
+}
+
+
+
+body{
+    background-color: #cad0f738;
+}
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    
+  }
+
+.sidebar{
+    position: fixed;
+    width: 240px;
+    left: -240px;
+    min-height: 100vh;
+    background: #121a2b;
+    transition: all .5s ease;
+    
+    z-index: 1000;
+  }
+  .sidebar header{
+    font-size: 28px;
+    color: white;
+    line-height: 70px;
+    text-align: center;
+    background: #121a2b;
+    user-select: none;
+    font-family: 'Montserrat', sans-serif;
+  }
+  .sidebar a{
+    display: block;
+    height: 65px;
+    width: 100%;
+    color: white;
+    line-height: 65px;
+    padding-left: 30px;
+    box-sizing: border-box;
+    border-bottom: 1px solid black;
+    border-top: 1px solid rgba(255,255,255,.1);
+    border-left: 5px solid transparent;
+    font-family: 'Open Sans', sans-serif;
+    transition: all .5s ease;
+  }
+  a.active,a:hover{
+    border-left: 5px solid #d4af37;
+    color: #d4af37;
+  }
+  .sidebar a i{
+    font-size: 23px;
+    margin-right: 16px;
+  }
+  .sidebar a span{
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+  #check{
+    display: none;
+    position: fixed;
+    z-index: 2000;
+  }
+  label #btn,label #cancel{
+    position: absolute;
+    cursor: pointer;
+    color: white;
+    border-radius: 5px;
+    border: 1px solid #262626;
+    margin: 15px 30px;
+    margin-top: 30px;
+    font-size: 29px;
+    background: #1d2945;
+    height: 45px;
+    width: 45px;
+    text-align: center;
+    line-height: 45px;
+    transition: all .5s ease;
+  }
+  label #cancel{
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  #check:checked ~ .sidebar{
+    left: 0;
+  }
+  #check:checked ~ label #btn{
+    margin-left: 245px;
+    opacity: 0;
+    visibility: hidden;
+  }
+  #check:checked ~ label #cancel{
+    margin-left: 245px;
+    opacity: 1;
+    visibility: visible;
+    position: fixed;
+    z-index: 2000;
+  }
+  @media(max-width : 860px){
+    .sidebar{
+      height: auto;
+      width: 70px;
+      left: 0;
+      margin: 100px 0;
+    }
+    header,#btn,#cancel{
+      display: none;
+    }
+    span{
+      position: absolute;
+      margin-left: 23px;
+      opacity: 0;
+      visibility: hidden;
+    }
+    .sidebar a{
+      height: 60px;
+    }
+    .sidebar a i{
+      margin-left: -10px;
+    }
+    a:hover {
+      width: 200px;
+      background: inherit;
+    }
+    .sidebar a:hover span{
+      opacity: 1;
+      visibility: visible;
+      
+    }
+  }
+/* Reset some default styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Global styles */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+  }
+  
+  .container1 {
+    height: 60px;
+    background-color: #007bff;
+  }
+  
+  .outer-container {
+    max-width: 500px;
+    margin: 40px auto;
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  form {
+    display: grid;
+    gap: 20px;
+  }
+  
+  label {
+    font-weight: bold;
+  }
+  
+  input,
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  button.myButton {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button.myButton:hover {
+    background-color: #0062cc;
+  }
+  
+  /* Sidebar styles */
+  header {
+    color: #fff;
+    text-align: center;
+    font-size: 24px;
+    padding: 20px;
+    background-color: #007bff;
+  }
+  
+  .sidebar {
+    position: fixed;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background: #042331;
+    transition: all 0.3s ease;
+  }
+  
+  .sidebar.active {
+    left: 0;
+  }
+  
+  .sidebar header {
+    font-size: 22px;
+    color: white;
+    text-align: center;
+    background-color: #063146;
+    user-select: none;
+    padding: 20px;
+  }
+  
+  .sidebar a {
+    display: block;
+    height: 100%;
+    width: 100%;
+    line-height: 65px;
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    padding-left: 40px;
+    box-sizing: border-box;
+    border-bottom: 1px solid white;
+    transition: 0.4s;
+  }
+  
+  .sidebar a:hover {
+    background: #ff6a00;
+  }
+  
+  .sidebar i {
+    padding-right: 10px;
+    font-size: 25px;
+    line-height: 65px;
+    transition: 0.4s;
+  }
+  
+  .sidebar.active .fa-bars,
+  .sidebar.active .fa-times {
+    display: none;
+  }
+  
+  #btn:checked ~ .sidebar #btn,
+  #btn:checked ~ .sidebar #cancel {
+    display: none;
+  }
+  
+  #btn:checked ~ .sidebar #header_image {
+    display: none;
+  }
+  
+  #btn:checked ~ .sidebar a span {
+    display: none;
+  }
+  
+  #btn:checked ~ .sidebar a {
+    font-size: 20px;
+    margin-left: 50px;
+    line-height: 80px;
+  }
+  
+  #btn:checked ~ .sidebar .active a {
+    margin-left: 0px;
+    line-height: 65px;
+  }
+  /* Header */
+header{
+    background-color:#f2f2f2 !important;
+    display:inline-block;
+    transform:translatex(-80px) translatey(-31px);
+   }
+   
+   /* Container1 */
+   .container1{
+    background-color:#f2f2f2;
+   }
+   
+   /* Body */
+   body{
+    background-color:#f2f2f2;
+   }
+   
+   /* Image */
+   #header_image img{
+    display:inline-block;
+    transform:translatex(935px) translatey(-33px);
+    height:185px;
+   }
+   
+   
+   
+   
+
+
+
+
+
+
+

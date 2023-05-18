@@ -1,6 +1,8 @@
+
 <!DOCTYPE html>
 <html>
 <head>
+<<<<<<< HEAD
 	<title>Contact Us - Recify</title>
 	<meta charset="utf-8">
 	<link rel="icon" type="image/x-icon" href="Recify_logo.png">
@@ -54,6 +56,69 @@
 				<label for="name">Name</label>
 				<input type="text" id="name" name="name" required>
 
+=======
+  <title>Recify - Contact Us</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script type="text/javascript" src="validation.js"></script>
+  <link rel="stylesheet" href="contacts.css">
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/gfg.js"></script>
+  
+  
+      <title>$title</title>
+      <link rel = "icon" type = "image/x-icon" href = "recipe-generator-site/Recify/Recify_logo.png">
+      <link rel="stylesheet" href="contacts.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+  </head>
+  <header>
+    <input type="checkbox" id="check">
+      <label for="check">
+        <i class="fas fa-bars" id="btn"></i>
+        <i class="fas fa-times" id="cancel"></i>
+      </label>
+      <div class="sidebar">
+        <header>My Menu</header>
+        
+        <a href="recipe-generator-site/Recify/index.html" class="active">
+          <i class="fas fa-qrcode"></i>
+          <span>Home</span>
+        </a>
+        <a href="#">
+          <i class="fas fa-link"></i>
+          <span>About Us</span>
+        </a>
+        <a href="#">
+          <i class="fas fa-stream"></i>
+          <span>Recipes</span>
+        </a>
+        <a href="#">
+           <i class="fas fa-calendar"></i>
+          <span>Contact Us</span>
+        </a>
+        <a href="#">
+          <i class="far fa-question-circle"></i>
+          <span>More</span>
+        </a>
+        
+      </div>
+</header>
+<body>
+  <div class="container1"></div>
+	<div class="outer-container">
+		<div class="container">
+			<h1>Contact Us</h1>
+			<form id="contact-form" action="#" method="post">
+				<label for="name">Name</label>
+				<input type="text" id="name" name="name" required>
+
+>>>>>>> 35422b82a4bef2b2d4a3ce9df2c767b262ba3eb2
 				<label for="email">Email</label>
 				<input type="email" id="email" name="email" required>
 
@@ -64,13 +129,31 @@
 			</form>
 		</div>
 	</div>
+<<<<<<< HEAD
 
+=======
+>>>>>>> 35422b82a4bef2b2d4a3ce9df2c767b262ba3eb2
   <script>
     document.getElementById("contact-form").addEventListener("submit", function(event) {
       var nameInput = document.getElementById("name");
       var emailInput = document.getElementById("email");
       var subjectInput = document.getElementById("subject");
       var messageInput = document.getElementById("message");
+<<<<<<< HEAD
+=======
+  
+      if (!nameInput.checkValidity() || !emailInput.checkValidity() || !subjectInput.checkValidity() || !messageInput.checkValidity()) {
+        // Display an error message or handle invalid input
+        event.preventDefault();
+      }
+    });
+  </script>
+
+  
+  
+  
+  
+>>>>>>> 35422b82a4bef2b2d4a3ce9df2c767b262ba3eb2
   
       if (!nameInput.checkValidity() || !emailInput.checkValidity() || !subjectInput.checkValidity() || !messageInput.checkValidity()) {
         // Display an error message or handle invalid input
