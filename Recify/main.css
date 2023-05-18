@@ -1,8 +1,14 @@
-logo 
+@import url('https://fonts.cdnfonts.com/css/imelda');
+@import url('https://fonts.cdnfonts.com/css/Chentalle');
+@import url("//fonts.googleapis.com/css2?family=Alata:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
+@import url("//fonts.googleapis.com/css2?family=Piazzolla:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
+@import url("//fonts.googleapis.com/css2?family=Habibi:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
+@import url("//fonts.googleapis.com/css2?family=Baskervville:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
 
 html, body {
     
     margin: 0;
+   
 
 }
 
@@ -19,15 +25,16 @@ html, body {
   
     
 }
+
 .contains  .edie {
     background-color: white;
     border-radius: 60px;
     width: 300px;
     top: 0%;
     border-radius: 35px;
-    background: #1f3747;
-    box-shadow: inset 48px 48px 46px #101c2495,
-            inset -48px -48px 46px #2f536b;
+    background: #5b7f95 ;
+    box-shadow: inset 48px 48px 46px #517185,
+            inset -48px -48px 46px #658da5;
  
  
    
@@ -49,6 +56,11 @@ header {
     
 }
 
+#menu ul a{
+    transform:translatex(471px) translatey(0px);
+    max-width: max-content;
+}
+   
 #menu{
     float: right;
     width: 40%;
@@ -101,8 +113,9 @@ header {
 }
      
 #menu nav ul{
-    transform:translatex(70px) translatey(-6px);
-    padding-left:328px;
+    transform:translatex(143px) translatey(-7px);
+    padding-left:60px;
+    max-width: 100%;
 }
 
 h1{
@@ -140,6 +153,54 @@ b{
     color: #000000;
     
 }
+
+
+#search center button{
+    transform:translatex(35px) translatey(-4px);
+    min-height:43px;
+    width:80px;
+    border-width:2px !important;
+    border-top-width:4px;
+    border-top-left-radius:16px;
+    border-bottom-right-radius:16px;
+    border-color:#2b6a8c;
+    border-top-right-radius:16px;
+    font-family:'Alegreya', serif;
+    font-weight:500;
+    font-size:16px;
+    line-height:0px;
+    letter-spacing:0.4px;
+    border-bottom-left-radius:16px;
+    box-shadow:8px 4px 11px 0px #000000;
+}
+/* Input */
+#search form input[type=text]{
+    transform:translatex(35px) translatey(-6px);
+    min-height:27px;
+    width:51%;
+    border-width:4px;
+    border-color:#23465b;
+    border-style:solid;
+    border-top-left-radius:30px;
+    border-bottom-left-radius:30px;
+    border-bottom-right-radius:30px;
+    border-top-right-radius:30px;
+    box-shadow:6px 8px 16px -3px #000000;
+    position:relative;
+    top:0px;
+    
+}
+.section-light center b{
+    box-shadow:none;
+    text-transform:capitalize;
+    font-family:'Alice', serif;
+    font-size:58px;
+    font-weight:300;
+    text-shadow:rgb(255, 0, 0) -1px 0px 0px, rgb(0, 255, 255) 1px 0px 0px;
+    word-spacing:0.4px;
+    letter-spacing:1.7px;
+}  
+   
 #search{
     position: relative; 
     	
@@ -182,7 +243,10 @@ b{
     width: 20%;
 }
 #header_image img{
-    width: 40%;
+    width: 93px;
+
+        transform:translatex(-60px) translatey(-11px);
+       
     float: left;
     padding: 0px;
 }
@@ -191,8 +255,8 @@ b{
     margin: 75% 0;
 }
 .parallax {
-    background-image: url(food2.jpg);
-      
+    background-image: url(https://images.unsplash.com/photo-1505935428862-770b6f24f629?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1767&q=80);
+    
     height: 800px; 
     background-size: 50% 50%;
     background-attachment: fixed;
@@ -210,11 +274,11 @@ b{
     width: 100%;
     transform: translate(-50%, -50%);
     text-align: auto;
-    color: #fff;
+    color: #000000;
     opacity: 1;
     transition: opacity 4s ease;
     font-size: 40px;
-    font-family: 'Lucida Sans Unicode';
+    font-family: 'imelda';
     letter-spacing: 2px;
     line-height: 6rem;
 
@@ -223,7 +287,7 @@ b{
     opacity: 0;
 }
 .parallax-2 {
-    background-image: url(g/food5.jpg);
+    background-image: url(https://images.unsplash.com/photo-1579795264646-2b9e0b31e6de?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1769&q=80);
     height: 800px; 
     background-size: 50% 50%;
     background-attachment: fixed;
@@ -338,9 +402,16 @@ p{
 
 
 .section-dark{
-    background-color: rgb(253, 253, 253);
+    background-color: rgb(255, 255, 255);
     object-fit: contain;
+    min-height:80vh;
     
+}
+.section-dark center h1{
+    position: center;
+    font-size:42px;
+    text-transform:capitalize;
+    font-family:'Baskervville', serif;
 }
 .section-gray{
     background-color: rgb(253, 253, 253);
@@ -530,68 +601,3 @@ div{
 
 
 
-/*ABOUT US PAGE*/
-/* Import Google Fonts */
-@import url("//fonts.googleapis.com/css2?family=Piazzolla:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
-@import url("//fonts.googleapis.com/css2?family=Habibi:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
-
-/* Bold Tag */
-.section-light center b{
- font-family:'Piazzolla', serif;
- color:#ffffff;
-}
-
-/* Paragraph */
-.section-light center p{
- transform:translatex(4px) translatey(-9px);
- font-family:'Habibi', serif;
- color:#e0e0e0;
-}
-
-/* Centred block */
-.section-light center{
- color:#000000;
-}
-
-/* Section light */
-.section-light{
- background-image:linear-gradient(to right, #000428 0%, #004e92 100%);
-}
-
-/*CONTACT US PAGE*/
-/* Input */
-#contact-form form input[type=text]{
-    width:34%;
-    height:31px;
-   }
-   
-   /* Input */
-   #contact-form form input[type=email]{
-    width:34%;
-    height:31px;
-   }
-   
-   /* Text Area */
-   #contact-form form textarea{
-    height:124px;
-    transform:translatex(0px) translatey(0px);
-    text-align:center;
-    width:54%;
-   }
-   
-   /* Button */
-   #contact-form form .myButton{
-    transform:translatex(-165px) translatey(0px);
-    height:51px;
-    font-size:15px;
-   }
-
-   /* Image */
-#header_image img{
-    transform:translatex(-204px) translatey(-16px);
-    width:102px;
-   }
-   
-   
-   
-   
