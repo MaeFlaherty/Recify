@@ -9,8 +9,8 @@ except ImportError:
 def pySearch(searchString):
 	validSites = 0
 	searchResults = []
-	for i in search(searchString, tld = "co.in", num = 5, stop = 5, pause = 2):
-		print(i)
+	for i in search(searchString, tld = "co.in", num = 6, stop = 6, pause = 2):
+		#print(i)
 		if webScraper.verifyJSON(i):
 			searchResults.append(i)
 			validSites += 1
