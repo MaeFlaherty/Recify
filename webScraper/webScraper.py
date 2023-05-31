@@ -41,7 +41,10 @@ def stripList(itemList = list):
 	return newList
 
 class Recipe:
-	def __init__(self, data: dict):
+	def __init__(self, data: dict, link = None):
+		self.data = data
+		self.link = link
+
 		try:
 			self.name = data["name"]
 		except KeyError:
@@ -64,8 +67,22 @@ class Recipe:
 		except KeyError:
 			instructionsList = ["Not Found"]
 		
-
 		self.instructions = stripList(instructionsList)
+
+	def __str__(self):
+		return self.name
+
+	def getName(self):
+		return self.name
+
+	def getData(self):
+		return self.data
+
+	def getImage(self):
+		return self.image
+		
+	def getLink(self):
+		return self.link
 
 
 

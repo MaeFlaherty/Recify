@@ -4,7 +4,9 @@ from webScraper import Recipe
 import recipeSearch 
 
 urls = (
-	'/(.*)', 'index'
+	'/search/(.*)', 'search',
+	'/(.*)', 'index',
+	
 )
 
 app = web.application(urls, globals())
@@ -35,15 +37,17 @@ class search:
 		self.render = web.template.render("templates/")
 
 	def GET(self, term = str):
-		try:
-			searchList = recipeSearch.pySearch(term)
-			recList = []
-			for i in searchList:
-				recList.append(Recipe(i))
-		except:
-			searchList = ["name", "name", "name", "name", "name", "name"]
 
-		return self.render.search(term, recList)
+		termSplit = term.split("/")
+		term = termSplit[-1]
+		print(f"Search term: {term}")
+
+		#try:
+		searchList = recipeSearch.pySearch(term)
+		#except:
+		#	print("Search Failed")
+
+		return self.render.search(term, searchList)
 
 
 

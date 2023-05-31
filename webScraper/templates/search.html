@@ -1,24 +1,25 @@
-$def with (title, nameList)
+$def with (title, recList)
 <!DOCTYPE html>
 <html>
 <head>
     <title>$title</title>
-    <link rel = "icon" type = "image/x-icon" href = "recipe-generator-site/Recify/Recify_logo.png">
+    
     <link rel="stylesheet" href="/static/searchs.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type = "text/javascript"src="findRecipe.js"></script> 
   
 </head>
 <header>
 	<div id="menu">
 		<nav>
 		  <ul>
-			<div id="header_image"><img href="/recipe-generator-site/Recify/Recify_logo.png" alt="Recify_logo"></div>
+			<div id="header_image"><img href="/static/Recify_logo.png" alt="Recify_logo"></div>
 			<li class="active">
-			  <a href="#">Home</a>
+			  <a href=http://localhost:8000>Home</a>
 			</li>
 			<li>
-			  <a href="about.html">About Us</a>
+			  <a href="http://localhost:8000/about.html">About Us</a>
 			</li>
 			<li>
 			  <a href="#">Recipes</a>
@@ -66,12 +67,14 @@ $def with (title, nameList)
     </div>
     <div class="container2">
         <div class="container3">
-            $for name in nameList
+            $for rec in recList
             <div class="card">
                 <div class="flex-box">
-                    <img src=""/>
+                    <img src="$rec.getImage()">
                     <div class="info">
-                        <p>$name[name]</p>
+                        <p>$rec</p>
+                        <script type = "text/javascript"src="findRecipe.js"></script>
+                        <button><a src = $rec.getLink()> Make This Recipe</a></button>
                     </div>
                 </div>
             </div>
@@ -82,3 +85,4 @@ $def with (title, nameList)
         
     
 </body>
+</html>

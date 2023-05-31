@@ -12,7 +12,7 @@ def pySearch(searchString):
 	for i in search(searchString, tld = "co.in", num = 6, stop = 6, pause = 2):
 		#print(i)
 		if webScraper.verifyJSON(i):
-			searchResults.append(i)
+			searchResults.append(Recipe(webScraper.get_ld_json(i), i))
 			validSites += 1
 	print(f"Valid Recipes Found: {validSites}")
 	return searchResults
@@ -27,5 +27,5 @@ if __name__ == "__main__":
 	for i in results:
 		data = webScraper.get_ld_json(i)
 		recipe = Recipe(data)
-		print(recipe.name)
+		print(recipe.getName())
 
