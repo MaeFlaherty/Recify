@@ -6,7 +6,6 @@ import recipeSearch
 urls = (
 	'/search/(.*)', 'search',
 	'/(.*)', 'index',
-	
 )
 
 app = web.application(urls, globals())

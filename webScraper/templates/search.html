@@ -74,7 +74,7 @@ $def with (title, recList)
                     <div class="info">
                         <p>$rec</p>
                         <script type = "text/javascript"src="findRecipe.js"></script>
-                        <button><a src = $rec.getLink()> Make This Recipe</a></button>
+                        <a src = "$rec.getLink()">$("http://0.0.0.0:8080/" + rec.getLink())</a>
                     </div>
                 </div>
             </div>
