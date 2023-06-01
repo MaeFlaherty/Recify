@@ -10,7 +10,7 @@ def pySearch(searchString):
 	validSites = 0
 	searchResults = []
 	for i in search(searchString, tld = "co.in", num = 6, stop = 6, pause = 2):
-		#print(i)
+		print(i)
 		if webScraper.verifyJSON(i):
 			searchResults.append(Recipe(webScraper.get_ld_json(i), i))
 			validSites += 1
