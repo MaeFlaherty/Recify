@@ -1,3 +1,7 @@
 
 # OS Generated Files #
 .DS_store
+
+# Python Stuff # 
+.venv
+__pycache__

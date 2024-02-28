@@ -19,7 +19,7 @@ def get_ld_json(url: str) -> dict:
 		#print (data["@graph"][7]["recipeIngredient"])#test statement for debugging
 		return (data["@graph"][7])
 
-	#Works with NYT cooking and any othe non schema based recipe sites
+	#Works with NYT cooking and any other non schema based recipe sites
 	return json.loads("".join(soup.find("script", {"type":"application/ld+json"})))
 
 def verifyJSON(url: str):
@@ -98,8 +98,8 @@ if __name__ == "__main__":
 	print("\n" + data["name"] + "\n")
 
 	print ("<h2>*****INGREDIENTS*****<h2>")
-	for count, ing in enumerate(ingredients):
-		print(ing + "\n")
+	for count, i in enumerate(ingredients):
+		print(i + "\n")
 
 	print ("<h2>*****INSTRUCTIONS*****<h2>")
 	for count, inst in enumerate(instructions):
